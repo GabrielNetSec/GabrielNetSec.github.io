@@ -47,10 +47,11 @@ h1, h2, h3 {
 }
 
 .hero-content p {
-    font-size: 1.3em;      /* antes 1.2em */
+    font-size: 1.4em;      /* antes 1.2em */
     font-weight: 400;
     margin-bottom: 25px;
-    color: #444;           /* antes #333, lo aclara levemente */
+    margin-top: 10px;
+    color: #333;           /* antes #333, lo aclara levemente */
 }
 
 /* Hero buttons */
