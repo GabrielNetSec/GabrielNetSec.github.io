@@ -84,6 +84,17 @@ h2 {
     margin-bottom: 15px;
 }
 
+.project-category {
+    margin-top: 40px;
+}
+
+.project-category h3 {
+    color: #007acc;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
 /* Table styling */
 table {
     width: 100%;
