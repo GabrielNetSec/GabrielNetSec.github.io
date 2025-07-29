@@ -47,6 +47,13 @@ a:hover {
   transition: color 0.3s;
 }
 
+.nav-logo {
+  font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
 .nav-links a:hover {
   color: #007acc;
 }
