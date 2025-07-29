@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #0f1117;
-  color: #f2f2f2;
+  background-color: #f9f9f9;
+  color: #222;
   line-height: 1.6;
 }
 
 a {
-  color: #40a9ff;
+  color: #007acc;
   text-decoration: none;
 }
 
@@ -19,12 +19,12 @@ a:hover {
 
 /* Navbar */
 .navbar {
-  background-color: #1c1f26;
+  background-color: #ffffff;
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-container {
@@ -42,20 +42,20 @@ a:hover {
 }
 
 .nav-links a {
-  color: #f2f2f2;
+  color: #222;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #40a9ff;
+  color: #007acc;
 }
 
 .hamburger {
   display: none;
   background: none;
   border: none;
-  color: #f2f2f2;
+  color: #222;
   font-size: 1.5rem;
 }
 
@@ -67,12 +67,12 @@ a:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #1c1f26;
+    background-color: #ffffff;
     padding: 1rem;
     position: absolute;
     right: 1rem;
     top: 4.5rem;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
   }
 
   .nav-links.show {
@@ -82,16 +82,23 @@ a:hover {
 
 /* Sections */
 .section {
-  max-width: 900px;
+  max-width: 960px;
   margin: 3rem auto;
   padding: 0 1rem;
 }
 
 .section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #333;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
 }
 
 .section ul {
@@ -104,7 +111,7 @@ a:hover {
 
 /* Hero Banner */
 .hero-banner {
-  background-color: #1a1d23;
+  background-color: #f0f8ff;
   padding: 4rem 1rem;
   text-align: center;
 }
@@ -127,7 +134,7 @@ a:hover {
 }
 
 .btn {
-  background-color: #40a9ff;
+  background-color: #007acc;
   padding: 0.7rem 1.2rem;
   border-radius: 4px;
   color: white;
@@ -139,10 +146,37 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #298ddb;
+  background-color: #005f99;
 }
 
-/* Badges */
+/* Projects */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h4 {
+  margin: 0 0 0.5rem;
+  color: #007acc;
+}
+
+/* Badges & Skills */
 .badges, .skills-block {
   display: flex;
   flex-wrap: wrap;
@@ -192,13 +226,12 @@ a:hover {
   color: white;
 }
 
-/* Skills */
 .skills-block h3 {
   width: 100%;
   margin: 1rem 0 0.5rem;
-  color: #f2f2f2;
+  color: #333;
   font-size: 1.2rem;
-  border-left: 4px solid #40a9ff;
+  border-left: 4px solid #007acc;
   padding-left: 0.5rem;
 }
 
@@ -210,13 +243,13 @@ a:hover {
 }
 
 .social-icons a {
-  color: #f2f2f2;
+  color: #333;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #40a9ff;
+  color: #007acc;
 }
 
 /* Fade-in Animation */
@@ -233,9 +266,9 @@ a:hover {
 
 /* Game Section */
 details {
-  background-color: #1c1f26;
+  background-color: #f1f1f1;
   padding: 1rem;
-  border: 1px solid #444;
+  border: 1px solid #ccc;
   border-radius: 8px;
   margin-top: 1rem;
 }
@@ -256,8 +289,8 @@ iframe {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #1a1d23;
-  border-top: 1px solid #333;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #666;
 }
