@@ -16,7 +16,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="navbar-container">
-      <span class="nav-logo">Gabriel's Portfolio</span>
+      <span class="nav-logo">Gabriel</span>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
@@ -74,28 +74,43 @@
   <!-- Projects Section -->
   <section class="section fade-in" id="projects">
     <h2>My Projects</h2>
-    <div class="project-category">
-      <h3>Projects on my Master Program at UVic</h3>
-      <ul>
-        <li><strong>IoT Technology Implementation:</strong> <a href="https://github.com/GabrielNetSec/IoT-Projects">IoT Analytics and Security Project (EC569A)</a></li>
-        <li><strong>Communication Networks:</strong> <a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Roommate Wi-Fi Sharing (EC514)</a></li>
-        <li><strong>Network Defence:</strong> <a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Cisco ASA & PA IPS Configuration (EC519C)</a></li>
-      </ul>
+
+    <h3>Projects on my Master Program at UVic</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>IoT Technology Implementation</h4>
+        <p><a href="https://github.com/GabrielNetSec/IoT-Projects">IoT Analytics and Security (EC569A)</a></p>
+      </div>
+      <div class="project-card">
+        <h4>Communication Networks</h4>
+        <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Roommate Wi-Fi Sharing (EC514)</a></p>
+      </div>
+      <div class="project-card">
+        <h4>Network Defence</h4>
+        <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Cisco ASA & PA IPS (EC519C)</a></p>
+      </div>
     </div>
-    <div class="project-category">
-      <h3>Personal Projects</h3>
-      <ul>
-        <li><strong>Cloud Security and AWS:</strong> <a href="https://github.com/GabrielNetSec/AWS-Security-Examples">AWS Security Examples</a></li>
-        <li><strong>Network Automation with Ansible:</strong> <a href="https://github.com/GabrielNetSec/Ansible-Network-Automation">Ansible-Network-Automation</a></li>
-        <li><strong>Python Automation:</strong> <a href="https://github.com/GabrielNetSec/Python-Network-Automation">Python-Network-Automation</a></li>
-      </ul>
+
+    <h3>Personal Projects</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>Cloud Security and AWS</h4>
+        <p><a href="https://github.com/GabrielNetSec/AWS-Security-Examples">AWS Security Examples</a></p>
+      </div>
+      <div class="project-card">
+        <h4>Network Automation</h4>
+        <p><a href="https://github.com/GabrielNetSec/Ansible-Network-Automation">Ansible-Network-Automation</a></p>
+      </div>
+      <div class="project-card">
+        <h4>Python Automation</h4>
+        <p><a href="https://github.com/GabrielNetSec/Python-Network-Automation">Python-Network-Automation</a></p>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section class="section fade-in" id="skills">
     <h2>Technical Skills & Tools</h2>
-    <!-- Skills content remains unchanged -->
   </section>
 
   <!-- Contact Section -->
@@ -112,13 +127,10 @@
     </div>
   </section>
 
-  <!-- Fun Ending -->
+  <!-- Fun Game -->
   <section class="section fade-in" id="game">
     <h2>Thanks for Visiting!</h2>
-    <p>
-      You've reached the end of my portfolio. If you have any questions or would like to connect, feel free to reach out.
-      You've earned a fun break — try this classic minigame!
-    </p>
+    <p>You've earned a fun break — try this classic minigame!</p>
     <details>
       <summary>🎮 Play the Game</summary>
       <center>
@@ -129,24 +141,21 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Gabriel Naranjo. All rights reserved.</p>
+    <p>&copy; 2025 Gabriel Naranjo Orozco. All rights reserved.</p>
   </footer>
 
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
 
-    // Fade-in on scroll
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
-
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -154,7 +163,6 @@
         observer.unobserve(entry.target);
       });
     }, appearOptions);
-
     faders.forEach(fader => {
       appearOnScroll.observe(fader);
     });
