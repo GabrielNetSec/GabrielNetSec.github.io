@@ -71,50 +71,64 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section fade-in" id="skills">
-    <h2>Technical Skills & Tools</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, Bash, HTML, CSS, JavaScript (basic)</li>
-      <li><strong>Networking:</strong> IPv4/6, BGP, OSPF, MPLS, DNS, RADIUS</li>
-      <li><strong>Cloud & Automation:</strong> AWS, Terraform, Ansible, Git, CI/CD</li>
-      <li><strong>Cybersecurity:</strong> SOC tools, Snort, Wireshark, Linux, Firewalls</li>
-      <li><strong>Dev Tools:</strong> GitHub, Jira, Postman, Visual Studio Code</li>
-    </ul>
-  </section>
-
   <!-- Projects Section -->
   <section class="section fade-in" id="projects">
     <h2>My Projects</h2>
-    <h3>Projects on my Master Program at UVic</h3>
-    <div class="project-grid">
-      <div class="project-card">
-        <h4>IoT Technology Implementation</h4>
-        <p><a href="https://github.com/GabrielNetSec/IoT-Projects">IoT Analytics and Security (EC569A)</a></p>
-      </div>
-      <div class="project-card">
-        <h4>Communication Networks</h4>
-        <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Roommate Wi-Fi Sharing (EC514)</a></p>
-      </div>
-      <div class="project-card">
-        <h4>Network Defence</h4>
-        <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Cisco ASA & PA IPS (EC519C)</a></p>
-      </div>
+    <div class="project-category">
+      <h3>Projects on my Master Program at UVic</h3>
+      <ul>
+        <li><strong>IoT Technology Implementation:</strong> <a href="https://github.com/GabrielNetSec/IoT-Projects">IoT Analytics and Security Project (EC569A)</a></li>
+        <li><strong>Communication Networks:</strong> <a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Roommate Wi-Fi Sharing (EC514)</a></li>
+        <li><strong>Network Defence:</strong> <a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic">Cisco ASA & PA IPS Configuration (EC519C)</a></li>
+      </ul>
     </div>
-    <h3>Personal Projects</h3>
-    <div class="project-grid">
-      <div class="project-card">
-        <h4>Cloud Security and AWS</h4>
-        <p><a href="https://github.com/GabrielNetSec/AWS-Security-Examples">AWS Security Examples</a></p>
-      </div>
-      <div class="project-card">
-        <h4>Network Automation</h4>
-        <p><a href="https://github.com/GabrielNetSec/Ansible-Network-Automation">Ansible-Network-Automation</a></p>
-      </div>
-      <div class="project-card">
-        <h4>Python Automation</h4>
-        <p><a href="https://github.com/GabrielNetSec/Python-Network-Automation">Python-Network-Automation</a></p>
-      </div>
+    <div class="project-category">
+      <h3>Personal Projects</h3>
+      <ul>
+        <li><strong>Cloud Security and AWS:</strong> <a href="https://github.com/GabrielNetSec/AWS-Security-Examples">AWS Security Examples</a></li>
+        <li><strong>Network Automation with Ansible:</strong> <a href="https://github.com/GabrielNetSec/Ansible-Network-Automation">Ansible-Network-Automation</a></li>
+        <li><strong>Python Automation:</strong> <a href="https://github.com/GabrielNetSec/Python-Network-Automation">Python-Network-Automation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section fade-in" id="skills">
+    <h2>Technical Skills & Tools</h2>
+    <div class="skills-block">
+      <h3>Network</h3>
+      <span class="badge">Wireshark</span>
+      <span class="badge">GNS3</span>
+      <span class="badge">SecureCRT</span>
+      <span class="badge">Nmap</span>
+      <span class="badge">Cisco IOS/XR</span>
+    </div>
+
+    <div class="skills-block">
+      <h3>Cloud</h3>
+      <span class="badge orange">Amazon AWS</span>
+      <span class="badge gray">VMware</span>
+    </div>
+
+    <div class="skills-block">
+      <h3>Coding</h3>
+      <span class="badge dark">Python</span>
+      <span class="badge dark">C++</span>
+      <span class="badge red">Git</span>
+    </div>
+
+    <div class="skills-block">
+      <h3>Firewalls/IPS</h3>
+      <span class="badge blue">Cisco ASA</span>
+      <span class="badge blue">Palo Alto Networks</span>
+      <span class="badge red">Check Point</span>
+      <span class="badge blue">Cisco Firepower</span>
+    </div>
+
+    <div class="skills-block">
+      <h3>SIEM</h3>
+      <span class="badge darkblue">IBM QRadar</span>
+      <span class="badge black">Splunk</span>
     </div>
   </section>
 
@@ -132,10 +146,13 @@
     </div>
   </section>
 
-  <!-- Fun Game -->
+  <!-- Fun Ending -->
   <section class="section fade-in" id="game">
     <h2>Thanks for Visiting!</h2>
-    <p>You've earned a fun break — try this classic minigame!</p>
+    <p>
+      You've reached the end of my portfolio. If you have any questions or would like to connect, feel free to reach out.
+      You've earned a fun break — try this classic minigame!
+    </p>
     <details>
       <summary>🎮 Play the Game</summary>
       <center>
@@ -144,6 +161,7 @@
     </details>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Gabriel Naranjo. All rights reserved.</p>
   </footer>
@@ -151,15 +169,18 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
+
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
 
+    // Fade-in on scroll
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
+
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -167,10 +188,10 @@
         observer.unobserve(entry.target);
       });
     }, appearOptions);
+
     faders.forEach(fader => {
       appearOnScroll.observe(fader);
     });
   </script>
 </body>
 </html>
-
