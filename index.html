@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body>
@@ -40,11 +38,12 @@
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- Banner Image -->
   <section class="banner-image">
     <img src="assets/images/image4.jpg" alt="Cybersecurity themed image showing green interface on monitor">
   </section>
   
+  <!-- About -->
   <section class="section fade-in" id="about">
     <h2>About Me</h2>
     <p>
@@ -56,7 +55,7 @@
     </p>
   </section>
 
-  <!-- Objective Section -->
+  <!-- Objective -->
   <section class="section fade-in">
     <h2>Objective</h2>
     <p>
@@ -75,7 +74,7 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section class="section fade-in" id="projects">
     <h2>My Projects</h2>
 
@@ -84,49 +83,89 @@
       <div class="project-card">
         <h4>IoT Technology Implementation</h4>
         <p><a href="https://github.com/GabrielNetSec/IoT-Projects" target="_blank" rel="noopener noreferrer">IoT Analytics and Security Project (EC569A)</a></p>
+        <div class="card-tags badges">
+          <span class="badge">IoT</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Analysis of Communication Networks</h4>
         <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic" target="_blank" rel="noopener noreferrer">Roommate Wi-Fi Sharing (EC514)</a></p>
+        <div class="card-tags badges">
+          <span class="badge">Networking</span>
+          <span class="badge">Wi‑Fi</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Firewalls / IPS - Network Defence</h4>
         <p><a href="https://github.com/GabrielNetSec/MTIS-Project-Courses-at-UVic" target="_blank" rel="noopener noreferrer">Cisco ASA & PA IPS Configuration (EC519C)</a></p>
+        <div class="card-tags badges">
+          <span class="badge blue">Cisco ASA</span>
+          <span class="badge blue">Palo Alto</span>
+          <span class="badge red">IPS</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Machine Learning applied to Cybersecurity</h4>
         <p><a href="https://github.com/xuqiaoJiang/Summer-2025-ECE-597-Group3" target="_blank" rel="noopener noreferrer">Machine Learning (ML) model to detect abnormal emails (ECE597)</a></p>
+        <div class="card-tags badges">
+          <span class="badge dark">Machine Learning</span>
+          <span class="badge">Cybersecurity</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>AI Techniques - Machine Learning Models</h4>
         <p><a href="https://github.com/GabrielNetSec/ai-ca-housing-price-prediction-ece569a" target="_blank" rel="noopener noreferrer">Predictive modelling of housing prices in Canadian provinces using AI technique</a></p>
+        <div class="card-tags badges">
+          <span class="badge dark">AI/ML</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Cloud DC Infraestructures - CSC 579 Overlay and Peer-to-Peer Networking</h4>
         <p><a href="https://github.com/GabrielNetSec/Cloud-AWS-DevOps-Projects/tree/main/load-balancer-algorithms-aws" target="_blank" rel="noopener noreferrer">Load balancing algorithms in a cloud-based data center environment using AWS</a></p>
+        <div class="card-tags badges">
+          <span class="badge orange">AWS</span>
+          <span class="badge">Cloud</span>
+          <span class="badge">Load Balancing</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Network Penetration Testing – ECE567 Advanced Network Security</h4>
         <p><a href="https://github.com/GabrielNetSec/Pentesting-Red-Team/tree/main/ECE567-Adv-Network-security" target="_blank" rel="noopener noreferrer">
           Full-cycle penetration test in a simulated corporate network environment. Includes reconnaissance, vulnerability scanning, exploitation, and sensitive data exfiltration.</a></p>
+        <div class="card-tags badges">
+          <span class="badge red">Pentest</span>
+          <span class="badge">Recon</span>
+          <span class="badge">Vuln Scan</span>
+          <span class="badge">Exploitation</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Network Defense Strategies – ECE567 Advanced Network Security</h4>
         <p><a href="https://github.com/GabrielNetSec/SOC-Blue-Team/tree/main/ECE567-Defense-Strategies" target="_blank" rel="noopener noreferrer">
           Host-based intrusion detection and prevention using Snort and IPTables. Includes custom alert rules, firewall configurations, and full validation of defense effectiveness against NFS exploitation (CVE-1999-0170).</a></p>
+        <div class="card-tags badges">
+          <span class="badge red">Snort</span>
+          <span class="badge dark">IPTables</span>
+          <span class="badge darkblue">Blue Team</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Memory Forensics Investigation – ECE570 Computer Forensics Methodologies</h4>
         <p><a href="https://github.com/GabrielNetSec/SOC-Blue-Team/tree/main/ECE570-Memory-Forensics-Investigation" target="_blank" rel="noopener noreferrer">
           Full forensic analysis of a compromised Windows system using Volatility. Identified suspicious processes, hidden DLLs, injected code, command-and-control indicators, and anomalous registry hives</a></p>
+        <div class="card-tags badges">
+          <span class="badge">Volatility</span>
+          <span class="badge">Forensics</span>
+          <span class="badge">Windows</span>
+        </div>
       </div>
     </div>
 
@@ -136,23 +175,38 @@
         <h4>Python-Network-Automation</h4>
         <p><a href="https://github.com/GabrielNetSec/Python-Network-Automation" target="_blank" rel="noopener noreferrer">
           Scripts and examples of Python code for working with Network Devices (NETCONF - Cisco Routers)</a></p>
+        <div class="card-tags badges">
+          <span class="badge dark">Python</span>
+          <span class="badge">NETCONF</span>
+          <span class="badge blue">Cisco</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Python-Wifi-QoS-Users Capacity-Estimator</h4>
         <p><a href="https://github.com/GabrielNetSec/Python-Wifi-QoS-UsersCapacity-Estimator" target="_blank" rel="noopener noreferrer">
           Python tool to estimate the maximum number of users a WiFi (IEEE 802.11a/b/g/n) router can support under strict QoS. Combines queuing theory, Markov models, and real data.</a></p>
+        <div class="card-tags badges">
+          <span class="badge dark">Python</span>
+          <span class="badge">QoS</span>
+          <span class="badge">Markov</span>
+        </div>
       </div>
 
       <div class="project-card">
         <h4>Cloud - AWS - DevOps</h4>
         <p><a href="https://github.com/GabrielNetSec/Cloud-AWS-DevOps-Projects" target="_blank" rel="noopener noreferrer">
           AWS Cloud Projects with a focus on DevOps tools and Cloud DC infrastructure.</a></p>
+        <div class="card-tags badges">
+          <span class="badge orange">AWS</span>
+          <span class="badge">DevOps</span>
+          <span class="badge">Cloud</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section class="section fade-in" id="skills">
     <h2>Technical Skills & Tools</h2>
     <div class="skills-block">
@@ -197,7 +251,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="section fade-in" id="contact">
     <h2>Contact</h2>
     <ul>
@@ -241,12 +295,9 @@
 
     // Fade-in on scroll
     const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    const appearOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add('appear');
@@ -254,9 +305,7 @@
       });
     }, appearOptions);
 
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
+    faders.forEach(fader => appearOnScroll.observe(fader));
   </script>
 </body>
 </html>
