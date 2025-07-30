@@ -159,23 +159,23 @@ a:hover {
   background-color: #005f99;
 }
 
-/* Projects (UPDATED to responsive grid) */
+/* Projects (responsive grid) */
 .project-grid {
-  display: grid; /* changed from flex to grid */
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on desktop */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {
   .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .project-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -198,7 +198,21 @@ a:hover {
 }
 
 .project-card p {
-  margin: 0; /* keep link paragraph tight */
+  margin: 0;
+}
+
+/* Project card tags (chips) */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.project-card .badge {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px; /* make them pill-shaped inside cards */
 }
 
 /* Badges & Skills */
@@ -219,37 +233,13 @@ a:hover {
   color: white;
 }
 
-.badge.orange {
-  background-color: #f6a100;
-  color: black;
-}
-
-.badge.gray {
-  background-color: #999;
-  color: white;
-}
-
-.badge.red {
-  background-color: #e74c3c;
-}
-
-.badge.blue {
-  background-color: #3498db;
-}
-
-.badge.dark {
-  background-color: #34495e;
-}
-
-.badge.black {
-  background-color: #000;
-  color: white;
-}
-
-.badge.darkblue {
-  background-color: #2e3cbf;
-  color: white;
-}
+.badge.orange { background-color: #f6a100; color: black; }
+.badge.gray   { background-color: #999;    color: white; }
+.badge.red    { background-color: #e74c3c; }
+.badge.blue   { background-color: #3498db; }
+.badge.dark   { background-color: #34495e; }
+.badge.black  { background-color: #000;    color: white; }
+.badge.darkblue { background-color: #2e3cbf; color: white; }
 
 .skills-block h3 {
   width: 100%;
@@ -329,7 +319,7 @@ footer {
 /* Banner image (cropped cover) */
 .banner-image {
   width: 100%;
-  height: 400px; /* Adjust the height if needed */
+  height: 400px; /* Adjust if needed */
   overflow: hidden;
   position: relative;
   margin: 0 auto 40px;
@@ -339,6 +329,6 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Keep key area centered when cropping */
+  object-position: center;
   display: block;
 }
